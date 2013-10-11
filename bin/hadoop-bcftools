@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'hadoop/bcftools'
+
+hadoop_bcftools = Hadoop::Bcftools.new
+
+hadoop_bcftools.run ARGV.join(' ')
